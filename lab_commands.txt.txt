@@ -1,0 +1,40 @@
+# ==============================
+# SOC Traffic Analysis Lab
+# Commands Used
+# ==============================
+
+# Verify network interfaces
+ip a
+
+# Capture traffic with tcpdump
+sudo tcpdump -i enp0s3 -w traffic.pcap
+
+# Test HTTP connection
+curl 192.168.56.101
+
+# Perform SYN scan with Nmap
+nmap -sS 192.168.56.101
+
+# Analyze PCAP traffic with Python
+python3 soc_analyzer.py
+
+# Run SOC alert script
+python3 soc_alert.py
+
+# Initialize Git repository
+git init
+
+# Add project files
+git add .
+
+# Commit project
+git commit -m "SOC traffic analysis lab clean setup"
+
+# Set main branch
+git branch -M main
+
+# Add GitHub repository
+git remote add origin https://github.com/moncadacyb/soc-traffic-analysis-lab.git
+
+# Push project to GitHub
+git push -u origin main
